@@ -343,6 +343,10 @@ header nav .nav_btn {
   display: block;
 }
 
+#investment {
+  width: 100%;
+}
+
 #investment h1 {
   margin: 30px auto;
   color: #072c9e;
