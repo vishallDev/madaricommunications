@@ -198,6 +198,15 @@ header nav .nav_btn {
   margin: 20px 90px;
 }
 
+#section_hero .scroll {
+  text-align: center;
+  position: absolute;
+  bottom: -7%;
+  width: 100%;
+  color: white;
+  font: normal normal bold 14px/26px Inter;
+}
+
 #student_section {
   background: #072c9e;
   width: 100%;
