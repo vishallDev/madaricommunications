@@ -684,6 +684,10 @@ header nav .nav_btn {
   text-align: center;
 }
 
+#gallery .controller img {
+  cursor: pointer;
+}
+
 #gallery .controller h5 {
   font: normal normal bold 16px/20px Inter;
   padding: 0 20px;
@@ -750,13 +754,13 @@ header nav .nav_btn {
   width: 100%;
   background: #072c9e;
   margin-top: 58px;
-  padding: 34px 100px;
+  padding: 64px 100px;
 }
 
 #about h1 {
   text-align: center;
   font: normal normal bold 42px/51px Inter;
-  margin: 10px auto;
+  margin: 19px auto;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -765,7 +769,7 @@ header nav .nav_btn {
   text-align: center;
   font: normal normal normal 16px/24px Inter;
   color: #ffffff;
-  margin: 11px auto;
+  margin: 21px auto;
 }
 
 #about .aboutcard {

@@ -524,6 +524,7 @@ header {
       // border: 2px solid #db0c0c;
       img {
         height: auto;
+    
       }
     }
   }
@@ -535,6 +536,7 @@ header {
     text-align: center;
     img {
       // margin: auto 15px;
+      cursor: pointer;
     }
     h5 {
       font: normal normal bold 16px/20px Inter;
@@ -596,11 +598,11 @@ header {
   width: 100%;
   background: #072c9e;
   margin-top: 58px;
-  padding: 34px 100px;
+  padding: 64px 100px;
   h1 {
     text-align: center;
     font: normal normal bold 42px/51px Inter;
-    margin: 10px auto;
+    margin: 19px auto;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -608,7 +610,7 @@ header {
     text-align: center;
     font: normal normal normal 16px/24px Inter;
     color: #ffffff;
-    margin: 11px auto;
+    margin: 21px auto;
   }
 
   .aboutcard {
