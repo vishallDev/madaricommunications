@@ -50,7 +50,7 @@
     height: 100%;
     width: 100%;
     background: url(../assets/Group2.png) no-repeat center center/cover;
-.container{
+  .container{
   width: 100%;
   margin: 30px auto;
   h1{
@@ -62,7 +62,12 @@
 
   }
 }
+.scroll{
+  position: relative;
+  top: -10px;
+  font: normal normal bold 8px/12px Inter;
 
+}
 
   }
 

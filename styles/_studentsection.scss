@@ -32,7 +32,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-  
+flex-wrap: wrap;  
       .outerbox {
         display: grid;
         place-items: center;
@@ -85,7 +85,7 @@
       .progress-bar {
         display: flex;
         align-items: center;
-        // flex-direction: row-reverse;
+        // flex-wrap: wr;
         width: 100%;
         background-color: #2ea2ea;
         padding: 4px;
@@ -115,3 +115,69 @@
       display: block;
     }
   }
+
+  @media (max-width:$breakpoint-tablet){
+
+    #student_section {
+
+      height: 100%;
+
+    
+h1{
+  width: 100%;
+  font: normal normal bold 22px/31px Inter;
+  padding: 2px 5px;
+}
+
+
+.values {
+  flex-direction: column;
+
+  .outerbox {
+    padding: 10px;
+    .box {
+      width:  100px;
+      height: 100px;
+      font: normal normal bold 14px/19px Inter;
+      margin: 8px 20px;
+    }
+    p {
+      margin-top: 10px;
+      font: normal normal bold 15px/18px Inter;
+    }
+  }
+
+span{
+  transform: translateY(0);
+
+}
+
+}
+
+
+.wrapper{
+width: 90%;
+}
+
+
+
+
+
+
+
+button{
+  position: relative;
+  bottom: 10px;
+
+  
+}
+
+
+
+
+
+
+
+
+  }
+}

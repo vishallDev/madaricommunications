@@ -24,6 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       margin: 50px auto;
       .btnbox {
         display: inline-block;
@@ -45,4 +46,47 @@
       }
     }
   }
-  
+
+  @media (max-width:$breakpoint-tablet){
+
+
+    #tenancy {
+        height: 100%;
+    padding: 30px 40px;
+overflow: hidden;
+        h1{
+      font: normal normal bold 26px/31px Inter;
+
+        }
+        h2{
+      font: normal normal bold 18px/20px Inter;
+
+        }
+        p{
+      font: normal normal normal 14px/20px Inter;
+
+        }
+
+        .btndiv {
+      margin: 29px auto;
+      .btnbox {
+        margin: auto 13px;
+
+        button {
+          margin: auto 22px;
+          padding: 45px 28px;
+          font: normal normal bold 20px/26px Inter;
+
+        }
+        p {
+          font: normal normal bold 16px/24px Inter;
+          padding: 15px auto;
+        }
+
+      }
+        }
+
+
+    }
+
+  }

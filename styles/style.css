@@ -319,6 +319,11 @@ header .topnav {
   #section_hero .container p {
     font: normal normal bold 19px "Inter", sans-serif;
   }
+  #section_hero .scroll {
+    position: relative;
+    top: -10px;
+    font: normal normal bold 8px/12px Inter;
+  }
 }
 
 #student_section {
@@ -363,6 +368,8 @@ header .topnav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #student_section .values .outerbox {
@@ -466,6 +473,47 @@ header .topnav {
   display: block;
 }
 
+@media (max-width: 769px) {
+  #student_section {
+    height: 100%;
+  }
+  #student_section h1 {
+    width: 100%;
+    font: normal normal bold 22px/31px Inter;
+    padding: 2px 5px;
+  }
+  #student_section .values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #student_section .values .outerbox {
+    padding: 10px;
+  }
+  #student_section .values .outerbox .box {
+    width: 100px;
+    height: 100px;
+    font: normal normal bold 14px/19px Inter;
+    margin: 8px 20px;
+  }
+  #student_section .values .outerbox p {
+    margin-top: 10px;
+    font: normal normal bold 15px/18px Inter;
+  }
+  #student_section .values span {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #student_section .wrapper {
+    width: 90%;
+  }
+  #student_section button {
+    position: relative;
+    bottom: 10px;
+  }
+}
+
 #investment {
   width: 100%;
 }
@@ -517,6 +565,32 @@ header .topnav {
   font-family: "Inter", sans-serif;
 }
 
+@media (max-width: 769px) {
+  #investment {
+    height: 100%;
+  }
+  #investment h1 {
+    margin: 10px auto;
+    font: normal normal bold 22px/30px Inter;
+  }
+  #investment .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #investment .cards .card {
+    margin: 2px 5px;
+    width: 90%;
+  }
+}
+
 #overview {
   margin: 90px auto;
 }
@@ -550,6 +624,21 @@ header .topnav {
   color: white;
   display: block;
   margin: 27px auto;
+}
+
+@media (max-width: 769px) {
+  #overview {
+    height: 100%;
+    padding: 4px;
+    margin: 10px auto;
+  }
+  #overview h1 {
+    font: normal normal bold 22px/31px Inter;
+  }
+  #overview p {
+    font: normal normal normal 17px/26px Inter;
+    margin: 0 20px;
+  }
 }
 
 #location {
@@ -624,7 +713,51 @@ header .topnav {
   background: #de6420;
   color: white;
   display: block;
-  margin: 62px auto;
+  margin: 60px auto;
+}
+
+@media (max-width: 769px) {
+  #location {
+    padding: 10px 10px;
+  }
+  #location h1 {
+    font: normal normal bold 22px/31px Inter;
+  }
+  #location p {
+    font: normal normal normal 12px/20px Inter;
+    margin: 10px auto;
+  }
+  #location iframe {
+    height: 50%;
+  }
+  #location .distance {
+    text-align: left;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #location .distance .arrow {
+    margin: 0 5px;
+  }
+  #location .distance .block {
+    padding: 15px 25px;
+    font: normal normal bold 16px/28px Inter;
+  }
+  #location .distance .block h1 {
+    font: normal normal bold 20px/30px Inter;
+  }
+  #location button {
+    margin: 20px auto;
+  }
 }
 
 #tenancy {
@@ -662,6 +795,8 @@ header .topnav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 50px auto;
 }
 
@@ -694,6 +829,38 @@ header .topnav {
   text-align: center;
   font: normal normal bold 18px/26px Inter;
   padding: 18px auto;
+}
+
+@media (max-width: 769px) {
+  #tenancy {
+    height: 100%;
+    padding: 30px 40px;
+    overflow: hidden;
+  }
+  #tenancy h1 {
+    font: normal normal bold 26px/31px Inter;
+  }
+  #tenancy h2 {
+    font: normal normal bold 18px/20px Inter;
+  }
+  #tenancy p {
+    font: normal normal normal 14px/20px Inter;
+  }
+  #tenancy .btndiv {
+    margin: 29px auto;
+  }
+  #tenancy .btndiv .btnbox {
+    margin: auto 13px;
+  }
+  #tenancy .btndiv .btnbox button {
+    margin: auto 22px;
+    padding: 45px 28px;
+    font: normal normal bold 20px/26px Inter;
+  }
+  #tenancy .btndiv .btnbox p {
+    font: normal normal bold 16px/24px Inter;
+    padding: 15px auto;
+  }
 }
 
 .tenentoverview {

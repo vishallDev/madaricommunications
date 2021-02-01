@@ -45,3 +45,27 @@
     }
   }
 }
+
+
+// media
+@media (max-width: $breakpoint-tablet){
+  #investment{
+height: 100%;
+    h1 {
+      margin: 10px auto;
+      font: normal normal bold 22px/30px Inter;
+    }
+    
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+      margin: 2px 5px;
+      width: 90%;
+      
+    }
+  }
+    
+  }
+}
