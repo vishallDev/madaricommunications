@@ -1,0 +1,20 @@
+#overview {
+    margin: 90px auto;
+    h1 {
+      color: #072c9e;
+      text-align: center;
+      font: normal normal bold 42px/51px Inter;
+      margin: 27px auto;
+    }
+    p {
+      color: #333333;
+      font: normal normal normal 20px/32px Inter;
+      text-align: center;
+      margin: 0 170px;
+    }
+    button {
+      @include enq_btn();
+      display: block;
+      margin: 27px auto;
+    }
+  }

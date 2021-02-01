@@ -1,0 +1,47 @@
+    
+#investment {
+    width: 100%;
+  h1 {
+    margin: 30px auto;
+    color: #072c9e;
+    font: normal normal bold 42px/51px Inter;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 390px);
+    justify-content: center;
+    grid-auto-rows: auto;
+
+    grid-gap: 20px;
+
+    .card {
+      border: 2px solid #e7e7e7;
+      background: #f2f6f9;
+
+      h2 {
+        color: #072c9e;
+        font: normal normal bolder 24px/29px $font;
+        text-align: center;
+        margin: 21px auto;
+        height: 52px;
+        font-weight: bolder;
+        letter-spacing: 0.5px;
+
+        // line-height: 58px;
+      }
+      .img_card {
+        width: 100%;
+        max-height: 100%;
+      }
+      p {
+        text-align: center;
+        margin: 18px 41px;
+        color: #333333;
+        font-family: $font;
+      }
+    }
+  }
+}

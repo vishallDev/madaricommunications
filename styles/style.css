@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -753,7 +753,6 @@ header nav .nav_btn {
 #about {
   width: 100%;
   background: #072c9e;
-  margin-top: 58px;
   padding: 64px 100px;
 }
 

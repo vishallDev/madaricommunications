@@ -1,0 +1,117 @@
+
+#student_section {
+    background: #072c9e;
+    width: 100%;
+    height: 100vh;
+  
+    .arrow {
+      position: relative;
+      top: -14px;
+      display: block;
+      height: 29px;
+      width: 29px;
+      border: none;
+      z-index: 100;
+      margin: 0px auto;
+      text-align: center;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+      outline: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    h1 {
+      width: 50%;
+      text-align: center;
+      font: normal normal bold 42px/51px Inter;
+      margin: 30px auto;
+      color: white;
+    }
+    .values {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .outerbox {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 12px;
+        .box {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          border: 2px solid white;
+          font: normal normal bold 20px/26px Inter;
+          background: #0075b8;
+          display: grid;
+          place-items: center;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          box-shadow: 0 0 0px 10px #0075b8;
+          margin: 10px 60px;
+        }
+        p {
+          margin-top: 20px;
+          text-align: center;
+          color: white;
+          font: normal normal bold 20px/26px Inter;
+        }
+      }
+  
+      span {
+        border-bottom: 2px solid rgb(255, 255, 255);
+        width: 60px;
+        // position: relative;
+        transform: translateY(-15px);
+        //   right: -10%;
+        //   bottom: -80%;
+      }
+    }
+    hr {
+      margin: 40px;
+      border: none;
+      border-top: 1px dashed #ffffff;
+      width: 75%;
+      margin: 25px auto;
+      // color: #0075B8;
+    }
+  
+    .wrapper {
+      width: 550px;
+      margin: 0 auto;
+      .progress-bar {
+        display: flex;
+        align-items: center;
+        // flex-direction: row-reverse;
+        width: 100%;
+        background-color: #2ea2ea;
+        padding: 4px;
+        border-radius: 18px;
+        font-family: $font;
+        height: 36px;
+        color: white;
+        font-weight: bold;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  
+        .progress-bar-fill {
+          display: block;
+          height: 24px;
+          background: linear-gradient(90deg, #ff8500 0%, #fdbe14 100%);
+          border-radius: 12px;
+          width: 90%;
+          transition: width 500ms ease-in-out;
+          margin-right: 10px;
+          // margin-left: 10px;
+        }
+      }
+    }
+  
+    button {
+      @include enq_btn();
+      margin: 50px auto;
+      display: block;
+    }
+  }
