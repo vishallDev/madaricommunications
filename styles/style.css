@@ -6,8 +6,8 @@
           box-sizing: border-box;
 }
 
-header {
-  outline: 1px solid rebeccapurple;
+header .hammenu {
+  display: none;
 }
 
 header nav {
@@ -61,6 +61,102 @@ header nav .nav_btn {
   cursor: pointer;
   background: #de6420;
   color: white;
+}
+
+header .topnav {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  header nav {
+    display: none;
+  }
+  header .hammenu {
+    height: 50px;
+    background: white;
+    display: block;
+  }
+  header .hammenu .hamtrigger {
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 8px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../assets/dropdownmenu.png");
+    background-size: 100%;
+  }
+  header .hammenu img {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+  }
+  header .hammenu .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #020000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  header .hammenu .navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hammenu .navbar ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+  }
+  header .hammenu .navbar ul li a:hover, header .hammenu .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+  header .hammenu .showNav {
+    /* show the menu */
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  header .hammenu .showClose {
+    background-image: url("../assets/closepng.png");
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  header .hammenu .new {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
 }
 
 #form_modal {
@@ -205,6 +301,24 @@ header nav .nav_btn {
   width: 100%;
   color: white;
   font: normal normal bold 14px/26px Inter;
+}
+
+@media (max-width: 769px) {
+  #section_hero {
+    height: 100%;
+    width: 100%;
+    background: url(../assets/Group2.png) no-repeat center center/cover;
+  }
+  #section_hero .container {
+    width: 100%;
+    margin: 30px auto;
+  }
+  #section_hero .container h1 {
+    font: normal normal bold 26px/36px "Inter", sans-serif;
+  }
+  #section_hero .container p {
+    font: normal normal bold 19px "Inter", sans-serif;
+  }
 }
 
 #student_section {

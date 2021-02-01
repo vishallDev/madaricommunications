@@ -10,6 +10,9 @@
 
 
 $font: "Inter", sans-serif;
+$breakpoint-tablet: 769px;
+
+
 @mixin enq_btn() {
   padding: 14px 29px;
   font: normal normal normal 16px/20px $font;
