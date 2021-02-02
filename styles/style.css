@@ -60,7 +60,7 @@ header nav .nav_btn {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
 }
 
 header .topnav {
@@ -234,7 +234,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   display: block;
   margin: 10px auto;
 }
@@ -290,7 +290,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   margin: 20px 90px;
 }
 
@@ -474,7 +474,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   margin: 50px auto;
   display: block;
 }
@@ -627,7 +627,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   display: block;
   margin: 27px auto;
 }
@@ -717,7 +717,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   display: block;
   margin: 60px auto;
 }
@@ -822,7 +822,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   display: block;
   margin: auto 48px;
   padding: 50px 30px;
@@ -920,7 +920,7 @@ header .topnav {
   outline: none;
   cursor: pointer;
   background: #de6420;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   display: block;
   margin: 45px auto;
 }
