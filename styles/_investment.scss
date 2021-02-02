@@ -24,6 +24,7 @@
       transition: all 0.2s ease;
       &:hover {
         box-shadow: $shadow;
+        transform: scale(1.02);
       }
       h2 {
         color: #072c9e;

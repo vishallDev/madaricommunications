@@ -613,6 +613,8 @@ header .topnav {
 #investment .cards .card:hover {
   -webkit-box-shadow: 0px 5px 10px -4px black;
           box-shadow: 0px 5px 10px -4px black;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 #investment .cards .card h2 {

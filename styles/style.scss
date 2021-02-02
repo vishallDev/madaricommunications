@@ -37,16 +37,16 @@ $shadow: 0px 5px 10px -4px rgb(0, 0, 0);
 
 // including the scss files of each components
 
-@import './header';
-@import './FormModal';
-@import './Hero';
-@import './studentsection';
-@import './investment';
-@import './overview';
-@import './location';
-@import './tenancy';
-@import './tenantoverview';
-@import './gallery';
-@import './faq';
-@import './about';
-@import './Footer';
+@import './header'; //header+navbar included
+@import './FormModal';  //dropdown enquiry form 
+@import './Hero'; //Hero section /section 1st
+@import './studentsection'; //student accomodation /section 2nd
+@import './investment'; //investment and cards using grid /section 3rd
+@import './overview'; //overview section4th
+@import './location'; //location with iframe of maps and distance deatails section 5th
+@import './tenancy'; //tenancy section 6th
+@import './tenantoverview'; //tennacy overview section 7th
+@import './gallery'; //gallery and photos using grids section 8th
+@import './faq'; //frequently asked questions /section 9th
+@import './about'; //about us section /section 10th
+@import './Footer'; //footer section 12th 
