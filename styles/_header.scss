@@ -27,6 +27,11 @@ header {
             font-size: 16px;
             margin-left: 14px;
             margin-right: 14px;
+            transition: all 0.2s ease;
+            &:hover{
+             color: black;
+             
+            }
           }
         }
       }
@@ -50,15 +55,17 @@ nav{
   display: none;
 }
   .hammenu{
+    position: relative;
     height: 50px;
     background: white;
 display: block;
+z-index: 1000;
     .hamtrigger {
         position: absolute;
         /* always keep ham on top of everything */
         z-index: 1000;
         top: 8px;
-        right: 20px;
+        right: 10px;
         width: 36px;
         height: 36px;
         border: none;

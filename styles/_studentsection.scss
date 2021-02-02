@@ -2,11 +2,11 @@
 #student_section {
     background: #072c9e;
     width: 100%;
-    height: 100vh;
-  
+    height: 100%;
+  padding: 40px 0px;
     .arrow {
       position: relative;
-      top: -14px;
+      top: -54px;
       display: block;
       height: 29px;
       width: 29px;
@@ -25,7 +25,8 @@
       width: 50%;
       text-align: center;
       font: normal normal bold 42px/51px Inter;
-      margin: 30px auto;
+      margin: 0 auto;
+      margin-bottom: 30px;
       color: white;
     }
     .values {
@@ -119,10 +120,13 @@ flex-wrap: wrap;
   @media (max-width:$breakpoint-tablet){
 
     #student_section {
+      padding: 0px 0px;
 
       height: 100%;
 
-    
+      .arrow {
+        top: -12px;
+      }
 h1{
   width: 100%;
   font: normal normal bold 22px/31px Inter;

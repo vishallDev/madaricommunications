@@ -63,4 +63,14 @@
       }
     }
   }
-  
+@media  (max-width:$breakpoint-tablet){
+#form_modal {
+  .modal-content {
+    form{
+      margin: 0 auto;
+      padding: 5px 5px;
+      width: 100%;
+    }
+  }
+}
+}

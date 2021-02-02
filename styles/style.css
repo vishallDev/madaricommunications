@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -44,6 +44,12 @@ header nav ul li a {
   font-size: 16px;
   margin-left: 14px;
   margin-right: 14px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header nav ul li a:hover {
+  color: black;
 }
 
 header nav .nav_btn {
@@ -61,6 +67,14 @@ header nav .nav_btn {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header nav .nav_btn:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 header .topnav {
@@ -72,16 +86,18 @@ header .topnav {
     display: none;
   }
   header .hammenu {
+    position: relative;
     height: 50px;
     background: white;
     display: block;
+    z-index: 1000;
   }
   header .hammenu .hamtrigger {
     position: absolute;
     /* always keep ham on top of everything */
     z-index: 1000;
     top: 8px;
-    right: 20px;
+    right: 10px;
     width: 36px;
     height: 36px;
     border: none;
@@ -235,8 +251,24 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin: 10px auto;
+}
+
+#form_modal .modal-content form button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  #form_modal .modal-content form {
+    margin: 0 auto;
+    padding: 5px 5px;
+    width: 100%;
+  }
 }
 
 #section_hero {
@@ -291,7 +323,15 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   margin: 20px 90px;
+}
+
+#section_hero .container button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 #section_hero .scroll {
@@ -328,19 +368,20 @@ header .topnav {
     position: relative;
     top: -10px;
     font: normal normal bold 8px/12px Inter;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
 #student_section {
   background: #072c9e;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding: 40px 0px;
 }
 
 #student_section .arrow {
   position: relative;
-  top: -14px;
+  top: -54px;
   display: block;
   height: 29px;
   width: 29px;
@@ -360,7 +401,8 @@ header .topnav {
   width: 50%;
   text-align: center;
   font: normal normal bold 42px/51px Inter;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -475,13 +517,25 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   margin: 50px auto;
   display: block;
 }
 
+#student_section button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
+}
+
 @media (max-width: 769px) {
   #student_section {
+    padding: 0px 0px;
     height: 100%;
+  }
+  #student_section .arrow {
+    top: -12px;
   }
   #student_section h1 {
     width: 100%;
@@ -535,18 +589,30 @@ header .topnav {
 #investment .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (390px)[3];
-      grid-template-columns: repeat(3, 390px);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-auto-rows: auto;
+  margin: 0 30px;
   grid-gap: 20px;
 }
 
 #investment .cards .card {
   border: 2px solid #e7e7e7;
   background: #f2f6f9;
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#investment .cards .card:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
 }
 
 #investment .cards .card h2 {
@@ -628,8 +694,16 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin: 27px auto;
+}
+
+#overview button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 @media (max-width: 769px) {
@@ -718,8 +792,16 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin: 60px auto;
+}
+
+#location button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 @media (max-width: 769px) {
@@ -823,10 +905,18 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin: auto 48px;
   padding: 50px 30px;
   font: normal normal bold 26px/30px Inter;
+}
+
+#tenancy .btndiv .btnbox button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 #tenancy .btndiv .btnbox p {
@@ -921,8 +1011,16 @@ header .topnav {
   cursor: pointer;
   background: #de6420;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin: 45px auto;
+}
+
+.tenentoverview button:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
+  color: black;
 }
 
 @media (max-width: 769px) {
@@ -936,6 +1034,9 @@ header .topnav {
   .tenentoverview p {
     font: normal normal normal 14px/24px Inter;
     margin: 10px auto;
+  }
+  .tenentoverview table tr td {
+    font-size: 14px;
   }
 }
 
@@ -962,13 +1063,26 @@ header .topnav {
   margin: 41px auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr auto;
   grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+
+#gallery .images .slider {
+  width: 100%;
 }
 
 #gallery .images .slider img {
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+#gallery .images .slider img:hover {
+  -webkit-box-shadow: 0px 5px 10px -4px black;
+          box-shadow: 0px 5px 10px -4px black;
 }
 
 #gallery .controller {
@@ -1034,6 +1148,8 @@ header .topnav {
   #gallery .images .slider img {
     height: 80%;
     width: 80%;
+    -webkit-box-shadow: 0px 5px 10px -4px black;
+            box-shadow: 0px 5px 10px -4px black;
   }
 }
 
@@ -1073,8 +1189,8 @@ header .topnav {
   text-align: left;
   outline: none;
   font-size: 15px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   margin: 0 auto;
 }
 

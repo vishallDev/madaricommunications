@@ -11,16 +11,22 @@
   .cards {
     display: grid;
 
-    grid-template-columns: repeat(3, 390px);
+    // grid-template-columns: repeat(3, 390px);
+    grid-template-columns: (1fr 1fr 1fr);
     justify-content: center;
+    align-items: center;
     grid-auto-rows: auto;
-
+margin: 0 30px;
     grid-gap: 20px;
 
     .card {
       border: 2px solid #e7e7e7;
       background: #f2f6f9;
-
+height: 100%;
+transition: all 0.2s ease;
+&:hover{
+  box-shadow: $shadow;
+}
       h2 {
         color: #072c9e;
         font: normal normal bolder 24px/29px $font;
