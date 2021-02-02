@@ -50,3 +50,45 @@
       }
     }
   }
+
+  @media(max-width:$breakpoint-tablet){
+#about {
+  padding: 14px;
+  height: 100%;
+h1{
+  font: normal normal bold 22px/32px Inter;
+margin: 8px auto;
+}
+
+p {
+  font: normal normal normal 12px/18px Inter;
+  margin: 4px auto;
+  columns: auto;
+}
+
+.aboutcard {
+  flex-wrap: wrap;
+  .card {
+    // width: 40%;
+    .circle {
+      height: 50px;
+      width: 50px;
+
+    }
+    h3 {
+      font: normal normal bold 12px/14px Inter;
+    }
+    p {
+      font: normal normal normal 10px/12px Inter;
+    }
+  }
+  hr{
+    height: 30px;
+
+    transform: translateY(70px);
+
+  }
+}
+
+}
+  }

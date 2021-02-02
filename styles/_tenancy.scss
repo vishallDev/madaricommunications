@@ -24,7 +24,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
       margin: 50px auto;
       .btnbox {
         display: inline-block;
@@ -69,6 +68,8 @@ overflow: hidden;
 
         .btndiv {
       margin: 29px auto;
+      flex-wrap: wrap;
+
       .btnbox {
         margin: auto 13px;
 

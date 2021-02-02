@@ -315,14 +315,20 @@ header .topnav {
   }
   #section_hero .container h1 {
     font: normal normal bold 26px/36px "Inter", sans-serif;
+    margin: 0px 20px;
   }
   #section_hero .container p {
     font: normal normal bold 19px "Inter", sans-serif;
+    margin: 20px 20px;
+  }
+  #section_hero .container button {
+    margin: 20px 20px;
   }
   #section_hero .scroll {
     position: relative;
     top: -10px;
     font: normal normal bold 8px/12px Inter;
+    z-index: -1;
   }
 }
 
@@ -795,8 +801,6 @@ header .topnav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 50px auto;
 }
 
@@ -848,6 +852,8 @@ header .topnav {
   }
   #tenancy .btndiv {
     margin: 29px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #tenancy .btndiv .btnbox {
     margin: auto 13px;
@@ -864,8 +870,7 @@ header .topnav {
 }
 
 .tenentoverview {
-  margin: 48px auto;
-  padding: 0 150px;
+  padding: 48px 150px;
 }
 
 .tenentoverview h1 {
@@ -920,13 +925,28 @@ header .topnav {
   margin: 45px auto;
 }
 
+@media (max-width: 769px) {
+  .tenentoverview {
+    padding: 18px 20px;
+    height: 100%;
+  }
+  .tenentoverview h1 {
+    font: normal normal bold 22px/24px Inter;
+  }
+  .tenentoverview p {
+    font: normal normal normal 14px/24px Inter;
+    margin: 10px auto;
+  }
+}
+
 #gallery {
   width: 100%;
+  padding: 29px 0px;
 }
 
 #gallery h1 {
   color: #072c9e;
-  margin: 29px auto;
+  margin-bottom: 29px;
   text-align: center;
   font: normal normal bold 42px/51px Inter;
 }
@@ -974,9 +994,51 @@ header .topnav {
   padding: 0 20px;
 }
 
+@media (max-width: 769px) {
+  #gallery {
+    padding: 19px 0px;
+    height: 100%;
+    width: 100%;
+  }
+  #gallery h1 {
+    font: normal normal bold 22px/30px Inter;
+  }
+  #gallery p {
+    font: normal normal normal 14px/20px Inter;
+    width: 100%;
+  }
+  #gallery .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #gallery .images .slider {
+    width: 90%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #gallery .images .slider img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
 #faq {
-  margin-top: 49px;
-  padding: 39px 100px;
+  padding: 49px 100px;
   background-color: #f2f6f9;
 }
 
@@ -1029,6 +1091,31 @@ header .topnav {
   padding: 0 18px;
   background-color: transparent;
   overflow: hidden;
+}
+
+@media (max-width: 769px) {
+  #faq {
+    padding: 18px 20px;
+  }
+  #faq h1 {
+    width: 100%;
+    text-align: center;
+  }
+  #faq p {
+    width: 100%;
+    padding: 10px;
+    font: normal normal normal 13px/20px Inter;
+  }
+  #faq .accordion {
+    width: 100%;
+    font-size: 12px;
+  }
+  #faq .panel {
+    padding: 0 18px;
+  }
+  #faq .panel p {
+    margin: 2px auto;
+  }
 }
 
 #about {
@@ -1089,6 +1176,42 @@ header .topnav {
   -webkit-transform: translateY(120px);
           transform: translateY(120px);
   background: white;
+}
+
+@media (max-width: 769px) {
+  #about {
+    padding: 14px;
+    height: 100%;
+  }
+  #about h1 {
+    font: normal normal bold 22px/32px Inter;
+    margin: 8px auto;
+  }
+  #about p {
+    font: normal normal normal 12px/18px Inter;
+    margin: 4px auto;
+    -webkit-columns: auto;
+            columns: auto;
+  }
+  #about .aboutcard {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #about .aboutcard .card .circle {
+    height: 50px;
+    width: 50px;
+  }
+  #about .aboutcard .card h3 {
+    font: normal normal bold 12px/14px Inter;
+  }
+  #about .aboutcard .card p {
+    font: normal normal normal 10px/12px Inter;
+  }
+  #about .aboutcard hr {
+    height: 30px;
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+  }
 }
 
 footer {

@@ -2,9 +2,10 @@
 
 #gallery {
     width: 100%;
+    padding: 29px 0px;
     h1 {
       color: #072c9e;
-      margin: 29px auto;
+      margin-bottom: 29px ;
       text-align: center;
       font: normal normal bold 42px/51px Inter;
     }
@@ -44,4 +45,42 @@
         padding: 0 20px;
       }
     }
+  }
+
+  @media (max-width:$breakpoint-tablet){
+#gallery {
+  padding: 19px 0px;
+height: 100%;
+width: 100%;
+h1{
+  font: normal normal bold 22px/30px Inter;
+
+}
+p{
+  font: normal normal normal 14px/20px Inter;
+  width: 100%;
+// columns: auto;
+}
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  .slider {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+    img {
+      height: 80%;
+      width: 80%;
+  
+    }
+  }
+}
+
+
+}
   }

@@ -1,7 +1,7 @@
 
 #faq {
-    margin-top: 49px;
-    padding: 39px 100px;
+    // margin-top: 49px;
+    padding: 49px 100px;
     background-color: #f2f6f9;
     h1 {
       margin: 10px auto;
@@ -45,5 +45,39 @@
       padding: 0 18px;
       background-color: transparent;
       overflow: hidden;
+  
+    }
+  }
+
+
+  @media(max-width:$breakpoint-tablet){
+   #faq{
+
+     padding: 18px 20px;
+     h1{
+       width: 100%;
+       text-align: center;
+      }
+    p {
+      width: 100%;
+      padding: 10px;
+      font: normal normal normal 13px/20px Inter;
+
+    }
+
+    .accordion {
+      width: 100%;
+      font-size: 12px;
+
+      
+    }
+    .panel {
+      padding: 0 18px;
+    p{
+      margin: 2px auto;
+    }
+    }
+
+
     }
   }
