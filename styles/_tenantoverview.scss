@@ -1,63 +1,59 @@
 .tenentoverview {
-    // margin: 48px auto;
-    padding: 48px 150px;
-    h1 {
-      color: #072c9e;
-      text-align: center;
-      font: normal normal bold 42px/24px Inter;
-    }
-    p {
-      text-align: center;
-      font: normal normal normal 16px/24px Inter;
-      color: #333333;
-      margin: 39px auto;
-    }
-    table {
-      margin: 35px auto;
-      width: 100%;
+  padding: 48px 150px;
+  h1 {
+    color: #072c9e;
+    text-align: center;
+    font: normal normal bold 42px/24px Inter;
+  }
+  p {
+    text-align: center;
+    font: normal normal normal 16px/24px Inter;
+    color: #333333;
+    margin: 39px auto;
+  }
+  table {
+    margin: 35px auto;
+    width: 100%;
+    border: 1px #dddddd solid;
+    tr {
       border: 1px #dddddd solid;
-      tr {
-        border: 1px #dddddd solid;
-  
-        &:nth-child(odd) {
-          background-color: #f0f0f0;
-        }
-        td {
-          padding: 15px;
-          &:nth-child(2) {
-            text-align: right;
-          }
+
+      &:nth-child(odd) {
+        background-color: #f0f0f0;
+      }
+      td {
+        padding: 15px;
+        &:nth-child(2) {
+          text-align: right;
         }
       }
     }
-    button {
-      @include enq_btn();
-      display: block;
-      margin: 45px auto;
+  }
+  button {
+    @include enq_btn();
+    display: block;
+    margin: 45px auto;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .tenentoverview {
+    padding: 18px 20px;
+    height: 100%;
+    // width: 100%;
+    h1 {
+      font: normal normal bold 22px/24px Inter;
+    }
+    p {
+      font: normal normal normal 14px/24px Inter;
+      margin: 10px auto;
+    }
+    table {
+      tr {
+        td {
+          font-size: 14px;
+        }
+      }
     }
   }
-
-
-  @media (max-width:$breakpoint-tablet){
-.tenentoverview {
-  padding: 18px 20px;
-  height: 100%;
-  // width: 100%;
-h1{
-  font: normal normal bold 22px/24px Inter;
-
 }
-p{
-  font: normal normal normal 14px/24px Inter;
-  margin: 10px auto;
-
-}
-table{
-  tr{
-    td{
-      font-size: 14px;
-    }
-  }
-}
-}
-  }

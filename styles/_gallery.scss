@@ -1,93 +1,83 @@
-
-
 #gallery {
-    width: 100%;
-    padding: 29px 0px;
-    h1 {
-      color: #072c9e;
-      margin-bottom: 29px ;
-      text-align: center;
-      font: normal normal bold 42px/51px Inter;
-    }
-    p {
-      text-align: center;
-      font: normal normal normal 16px/24px Inter;
-      width: 70%;
-      margin: 0 auto;
-    }
-    .images {
-      margin: 41px auto;
-      display: grid;
-      // grid-template-columns: repeat(3, 1fr);
-      grid-template-columns: (1fr 1fr auto);
-      // justify-content: center;
-      grid-auto-rows: auto;
-      grid-gap: 10px;
-      .slider {
-        // border: 2px solid #db0c0c;
+  width: 100%;
+  padding: 29px 0px;
+  h1 {
+    color: #072c9e;
+    margin-bottom: 29px;
+    text-align: center;
+    font: normal normal bold 42px/51px Inter;
+  }
+  p {
+    text-align: center;
+    font: normal normal normal 16px/24px Inter;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .images {
+    margin: 41px auto;
+    display: grid;
+    grid-template-columns: (1fr 1fr auto);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    .slider {
+      width: 100%;
+      img {
         width: 100%;
-        img {
-          width: 100%;
-          height: 100%;
-      transition: 0.3s ease all;
-      &:hover{
-  box-shadow: $shadow;
-
-      }
+        height: 100%;
+        transition: 0.3s ease all;
+        &:hover {
+          box-shadow: $shadow;
         }
       }
     }
-    .controller {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      img {
-        // margin: auto 15px;
-        cursor: pointer;
-      }
-      h5 {
-        font: normal normal bold 16px/20px Inter;
-        padding: 0 20px;
-      }
-    }
   }
-
-  @media (max-width:$breakpoint-tablet){
-#gallery {
-  padding: 19px 0px;
-height: 100%;
-width: 100%;
-h1{
-  font: normal normal bold 22px/30px Inter;
-
-}
-p{
-  font: normal normal normal 14px/20px Inter;
-  width: 100%;
-// columns: auto;
-}
-
-.images{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  .slider {
-  width: 90%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  
+  .controller {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     img {
-      height: 80%;
-      width: 80%;
-  box-shadow: $shadow;
+      cursor: pointer;
+    }
+    h5 {
+      font: normal normal bold 16px/20px Inter;
+      padding: 0 20px;
     }
   }
 }
 
+@media (max-width: $breakpoint-tablet) {
+  #gallery {
+    padding: 19px 0px;
+    height: 100%;
+    width: 100%;
+    h1 {
+      font: normal normal bold 22px/30px Inter;
+    }
+    p {
+      font: normal normal normal 14px/20px Inter;
+      width: 100%;
+      // columns: auto;
+    }
 
-}
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      .slider {
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 80%;
+          width: 80%;
+          box-shadow: $shadow;
+        }
+      }
+    }
   }
+}

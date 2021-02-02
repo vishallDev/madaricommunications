@@ -1,82 +1,73 @@
-
 #faq {
-    // margin-top: 49px;
-    padding: 49px 100px;
-    background-color: #f2f6f9;
-    h1 {
-      margin: 10px auto;
-      text-align: left;
-      width: 65%;
-      color: #072c9e;
-      font: normal normal bold 42px/51px Inter;
+  padding: 49px 100px;
+  background-color: #f2f6f9;
+  h1 {
+    margin: 10px auto;
+    text-align: left;
+    width: 65%;
+    color: #072c9e;
+    font: normal normal bold 42px/51px Inter;
+  }
+  p {
+    color: #333333;
+    width: 65%;
+    margin: 29px auto;
+    font: normal normal normal 16px/24px Inter;
+  }
+
+  .accordion {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+    padding: 14px;
+    width: 65%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+    margin: 0 auto;
+    &:active,
+    &:hover {
+      background-color: #ccc;
     }
-    p {
-      color: #333333;
-      width: 65%;
-      margin: 29px auto;
-      font: normal normal normal 16px/24px Inter;
-    }
-  
-    .accordion {
-      display: flex;
-      background-color: #ffffff;
-      align-items: center;
-      color: #000000;
-      cursor: pointer;
-      padding: 14px;
-      width: 65%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: all 0.3s ease-in;
-      margin: 0 auto;
-      &:active,
-      &:hover {
-        background-color: #ccc;
-      }
-      img {
-        margin: 0 21px;
-      }
-    }
-  
-    .panel {
-      display: none;
-      padding: 0 18px;
-      background-color: transparent;
-      overflow: hidden;
+    img {
+      margin: 0 21px;
     }
   }
 
+  .panel {
+    display: none;
+    padding: 0 18px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+}
 
-  @media(max-width:$breakpoint-tablet){
-   #faq{
-
-     padding: 18px 20px;
-     h1{
-       width: 100%;
-       text-align: center;
-      }
+@media (max-width: $breakpoint-tablet) {
+  #faq {
+    padding: 18px 20px;
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
     p {
       width: 100%;
       padding: 10px;
       font: normal normal normal 13px/20px Inter;
-
     }
 
     .accordion {
       width: 100%;
       font-size: 12px;
-
-      
     }
     .panel {
       padding: 0 18px;
-    p{
-      margin: 2px auto;
-    }
-    }
-
-
+      p {
+        margin: 2px auto;
+      }
     }
   }
+}

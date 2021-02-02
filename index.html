@@ -36,37 +36,28 @@
         </button>
       </nav>
 
-<!--  -->
-<!-- Top Navigation Menu -->
-<div class="hammenu">
-
-  <img src="./assets/fraction.png" id="icon" alt="" >
-  <button class="hamtrigger"></button>
-  <div class="navbar">
-    <ul>
-    <li><a class="menuLink" href="#overview">Overview</a></li>
-    <li><a class="menuLink" href="#location">Location</a></li>
-    <li><a class="menuLink" href="#tenancy">Tenancy</a></li>
-    <li><a class="menuLink" href="#gallery">Photo</a></li>
-    <li><a class="menuLink" href="#faq">FAQ</a></li>
-  </ul>
-</div>
-</div>
-<!--  -->
-
-
+      <!--  -->
+      <!-- Top Navigation Menu -->
+      <div class="hammenu">
+        <img src="./assets/fraction.png" id="icon" alt="" />
+        <button class="hamtrigger"></button>
+        <div class="navbar">
+          <ul>
+            <li><a class="menuLink" href="#overview">Overview</a></li>
+            <li><a class="menuLink" href="#location">Location</a></li>
+            <li><a class="menuLink" href="#tenancy">Tenancy</a></li>
+            <li><a class="menuLink" href="#gallery">Photo</a></li>
+            <li><a class="menuLink" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
     </header>
     <!-- Header and navabr  -->
     <!-- ----------------------------------------------------------------- -->
 
-
-
-
-
-
-
     <div id="form_modal">
-      <div class="modal-content ">
+      <div class="modal-content">
         <span class="close">&times;</span>
         <h1>Enquiry Form</h1>
         <form>
@@ -97,12 +88,12 @@
           ENQUIRE NOW
         </button>
       </div>
-    <p class="scroll">Scroll Down</p>
+      <p class="scroll">Scroll Down</p>
     </section>
     <!-- ----------------------------------------------------------------- -->
 
     <section id="student_section">
-        <!-- <span class="arrow">scroll down</span> -->
+      <!-- <span class="arrow">scroll down</span> -->
       <span class="arrow"> &dArr;</span>
       <h1>STUDENT ACCOMMODATION INVESTMENT OPPORTUNITY</h1>
       <div class="values">
@@ -458,33 +449,27 @@
     </footer>
 
     <script>
-// 
-var navbar = document.querySelector(".navbar")
-var ham = document.querySelector(".hamtrigger")
-var img = document.getElementById("icon")
+      //hamburgermenu
+      var navbar = document.querySelector(".navbar");
+      var ham = document.querySelector(".hamtrigger");
+      var img = document.getElementById("icon");
 
-// toggles hamburger menu in and out when clicking on the hamburger
-function toggleHamburger(){
-  navbar.classList.toggle("showNav")
-  ham.classList.toggle("showClose")
-  img.classList.toggle("new")
-}
+      function toggleHamburger() {
+        navbar.classList.toggle("showNav");
+        ham.classList.toggle("showClose");
+        img.classList.toggle("new");
+      }
 
-ham.addEventListener("click", toggleHamburger)
-
-// toggle when clicking on links
-
-// METHOD 1
-var menuLinks = document.querySelectorAll(".menuLink")
-menuLinks.forEach( 
-  function(menuLink) { 
-    menuLink.addEventListener("click", toggleHamburger) 
-  }
-)
-
-// 
+      ham.addEventListener("click", toggleHamburger);
 
 
+      var menuLinks = document.querySelectorAll(".menuLink");
+      menuLinks.forEach(function (menuLink) {
+        menuLink.addEventListener("click", toggleHamburger);
+      });
+
+      //
+// footer date
       let dt = new Date();
       let footyear = (document.getElementById(
         "footeryear"
@@ -497,7 +482,6 @@ menuLinks.forEach(
       myFunction = (elem) => {
         modal.style.display = "block";
       };
-      // When the user clicks on <span> (x), close the modal
       span.onclick = function () {
         modal.style.display = "none";
       };

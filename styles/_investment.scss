@@ -1,6 +1,5 @@
-    
 #investment {
-    width: 100%;
+  width: 100%;
   h1 {
     margin: 30px auto;
     color: #072c9e;
@@ -11,22 +10,21 @@
   .cards {
     display: grid;
 
-    // grid-template-columns: repeat(3, 390px);
     grid-template-columns: (1fr 1fr 1fr);
     justify-content: center;
     align-items: center;
     grid-auto-rows: auto;
-margin: 0 30px;
+    margin: 0 30px;
     grid-gap: 20px;
 
     .card {
       border: 2px solid #e7e7e7;
       background: #f2f6f9;
-height: 100%;
-transition: all 0.2s ease;
-&:hover{
-  box-shadow: $shadow;
-}
+      height: 100%;
+      transition: all 0.2s ease;
+      &:hover {
+        box-shadow: $shadow;
+      }
       h2 {
         color: #072c9e;
         font: normal normal bolder 24px/29px $font;
@@ -35,8 +33,6 @@ transition: all 0.2s ease;
         height: 52px;
         font-weight: bolder;
         letter-spacing: 0.5px;
-
-        // line-height: 58px;
       }
       .img_card {
         width: 100%;
@@ -52,26 +48,23 @@ transition: all 0.2s ease;
   }
 }
 
-
 // media
-@media (max-width: $breakpoint-tablet){
-  #investment{
-height: 100%;
+@media (max-width: $breakpoint-tablet) {
+  #investment {
+    height: 100%;
     h1 {
       margin: 10px auto;
       font: normal normal bold 22px/30px Inter;
     }
-    
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .card {
-      margin: 2px 5px;
-      width: 90%;
-      
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin: 2px 5px;
+        width: 90%;
+      }
     }
-  }
-    
   }
 }

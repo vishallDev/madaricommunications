@@ -121,14 +121,14 @@ header .topnav {
     height: 100vh;
     overflow: hidden;
     color: white;
-    /* hide the menu above the screen by default */
+    /* hiding it */
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    /* transition adds a little animation when sliding in and out the menu */
-    -webkit-transition: -webkit-transform 0.2s ease;
-    transition: -webkit-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    /* transition adds sliding in and out the menu */
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
   header .hammenu .navbar ul {
     width: 100%;
@@ -153,7 +153,7 @@ header .topnav {
     padding-bottom: 10px;
     border-bottom: 2px solid black;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
   }
   header .hammenu .navbar ul li a:hover, header .hammenu .navbar ul li a:focus {

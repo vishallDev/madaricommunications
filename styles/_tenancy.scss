@@ -1,72 +1,66 @@
-
 #tenancy {
-    width: 100%;
-    height: 90vh;
-    background: url(../assets/tenancy.png) no-repeat center center/cover;
-    padding: 70px 180px;
-    color: #ffffff;
-  
-    h1 {
+  width: 100%;
+  height: 90vh;
+  background: url(../assets/tenancy.png) no-repeat center center/cover;
+  padding: 70px 180px;
+  color: #ffffff;
+
+  h1 {
+    text-align: center;
+    font: normal normal bold 42px/51px Inter;
+    margin-bottom: 20px;
+  }
+  h2 {
+    text-align: center;
+    font: normal normal bold 26px/24px Inter;
+  }
+  p {
+    text-align: center;
+    margin: 11px auto;
+    font: normal normal normal 16px/24px Inter;
+  }
+  .btndiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    .btnbox {
+      display: inline-block;
+      margin: 0 28px;
       text-align: center;
-      font: normal normal bold 42px/51px Inter;
-      margin-bottom: 20px;
-    }
-    h2 {
-      text-align: center;
-      font: normal normal bold 26px/24px Inter;
-    }
-    p {
-      text-align: center;
-      margin: 11px auto;
-      font: normal normal normal 16px/24px Inter;
-    }
-    .btndiv {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px auto;
-      .btnbox {
-        display: inline-block;
-        margin: 0 28px;
+
+      button {
+        @include enq_btn();
+        display: block;
+        margin: auto 48px;
+        padding: 50px 30px;
+        font: normal normal bold 26px/30px Inter;
+      }
+      p {
         text-align: center;
-  
-        button {
-          @include enq_btn();
-          display: block;
-          margin: auto 48px;
-          padding: 50px 30px;
-          font: normal normal bold 26px/30px Inter;
-        }
-        p {
-          text-align: center;
-          font: normal normal bold 18px/26px Inter;
-          padding: 18px auto;
-        }
+        font: normal normal bold 18px/26px Inter;
+        padding: 18px auto;
       }
     }
   }
+}
 
-  @media (max-width:$breakpoint-tablet){
-
-
-    #tenancy {
-        height: 100%;
+@media (max-width: $breakpoint-tablet) {
+  #tenancy {
+    height: 100%;
     padding: 30px 40px;
-overflow: hidden;
-        h1{
+    overflow: hidden;
+    h1 {
       font: normal normal bold 26px/31px Inter;
-
-        }
-        h2{
+    }
+    h2 {
       font: normal normal bold 18px/20px Inter;
-
-        }
-        p{
+    }
+    p {
       font: normal normal normal 14px/20px Inter;
+    }
 
-        }
-
-        .btndiv {
+    .btndiv {
       margin: 29px auto;
       flex-wrap: wrap;
 
@@ -77,17 +71,12 @@ overflow: hidden;
           margin: auto 22px;
           padding: 45px 28px;
           font: normal normal bold 20px/26px Inter;
-
         }
         p {
           font: normal normal bold 16px/24px Inter;
           padding: 15px auto;
         }
-
       }
-        }
-
-
     }
-
   }
+}

@@ -1,94 +1,89 @@
-
 #about {
-    width: 100%;
-    background: #072c9e;
-    padding: 64px 100px;
+  width: 100%;
+  background: #072c9e;
+  padding: 64px 100px;
+  h1 {
+    text-align: center;
+    font: normal normal bold 42px/51px Inter;
+    margin: 19px auto;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+    font: normal normal normal 16px/24px Inter;
+    color: #ffffff;
+    margin: 21px auto;
+  }
+
+  .aboutcard {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: 20%;
+
+      text-align: center;
+      color: #ffffff;
+
+      .circle {
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      h3 {
+        font: normal normal bold 20px/24px Inter;
+      }
+      p {
+        font: normal normal normal 16px/20px Inter;
+      }
+    }
+    hr {
+      position: relative;
+      bottom: 1px;
+      height: 90px;
+      transform: translateY(120px);
+      background: white;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #about {
+    padding: 14px;
+    height: 100%;
     h1 {
-      text-align: center;
-      font: normal normal bold 42px/51px Inter;
-      margin: 19px auto;
-      color: #ffffff;
-      text-transform: uppercase;
+      font: normal normal bold 22px/32px Inter;
+      margin: 8px auto;
     }
+
     p {
-      text-align: center;
-      font: normal normal normal 16px/24px Inter;
-      color: #ffffff;
-      margin: 21px auto;
+      font: normal normal normal 12px/18px Inter;
+      margin: 4px auto;
+      columns: auto;
     }
-  
+
     .aboutcard {
-      display: flex;
-      justify-content: space-between;
-  
+      flex-wrap: wrap;
       .card {
-        width: 20%;
-  
-        text-align: center;
-        color: #ffffff;
-  
+        // width: 40%;
         .circle {
-          height: 98px;
-          width: 98px;
-          border-radius: 50%;
-          background-color: white;
+          height: 50px;
+          width: 50px;
         }
         h3 {
-          font: normal normal bold 20px/24px Inter;
+          font: normal normal bold 12px/14px Inter;
         }
         p {
-          font: normal normal normal 16px/20px Inter;
+          font: normal normal normal 10px/12px Inter;
         }
       }
       hr {
-        position: relative;
-        bottom: 1px;
-        height: 90px;
-        transform: translateY(120px);
-  
-        background: white;
+        height: 30px;
+
+        transform: translateY(70px);
       }
     }
   }
-
-  @media(max-width:$breakpoint-tablet){
-#about {
-  padding: 14px;
-  height: 100%;
-h1{
-  font: normal normal bold 22px/32px Inter;
-margin: 8px auto;
 }
-
-p {
-  font: normal normal normal 12px/18px Inter;
-  margin: 4px auto;
-  columns: auto;
-}
-
-.aboutcard {
-  flex-wrap: wrap;
-  .card {
-    // width: 40%;
-    .circle {
-      height: 50px;
-      width: 50px;
-
-    }
-    h3 {
-      font: normal normal bold 12px/14px Inter;
-    }
-    p {
-      font: normal normal normal 10px/12px Inter;
-    }
-  }
-  hr{
-    height: 30px;
-
-    transform: translateY(70px);
-
-  }
-}
-
-}
-  }
